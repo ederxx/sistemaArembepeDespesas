@@ -27,8 +27,15 @@ function App() {
     <div className="App">
       <Header>Arembepe Sistema</Header>
       <Form bancos={bancos.map(banco => banco.nome)} aDespesaCadastrada={despesa => aNovaDespesaAdicionada(despesa)} />
-      
-      {despesas.map(despesa => <Despesa
+      <section className='cabecalho-despesas'> 
+      <ul className="cabecalho">
+        <td>Nome</td>
+      <td>Banco</td>
+      <td>Dt Vencimento</td>
+      <td>Dt Pagamento</td>
+      <td>Valor</td>
+        </ul> 
+        {despesas.map(despesa => <Despesa
         key={despesa.nome} 
         nome={despesa.nome} 
         banco={despesa.banco} 
@@ -40,6 +47,8 @@ function App() {
 
         />)}   
 
+        </section>
+      
     </div>
   );
 }

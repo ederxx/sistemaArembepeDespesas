@@ -12,6 +12,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.cabecalho-despesas{
+align-items: center;
+margin-left: 22%;
+
+
+}
+
+.cabecalho-despesas td {
+  width: 150px;
+}
 
 .App-header {
   background-color: #282c34;

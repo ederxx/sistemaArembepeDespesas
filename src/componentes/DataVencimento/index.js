@@ -1,4 +1,3 @@
-import  './DataVencimento.css'
 
 
 const DataVencimento = (props) => {

@@ -1,4 +1,3 @@
-import './ListaSuspensa.css'
 
 const ListaSuspensa = (props) => {
 

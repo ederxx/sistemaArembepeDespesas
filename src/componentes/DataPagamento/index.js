@@ -1,4 +1,3 @@
-import  './DataPagamento.css'
 
 const DataPagamento = (props) => {
 return (
