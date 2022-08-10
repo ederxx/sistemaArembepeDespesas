@@ -1,0 +1,27 @@
+.lista-suspensa  label{
+   
+    margin-bottom: 8px;
+    font-size: 18px;
+
+    display:grid;  
+    margin-bottom: 8px;
+    font-size: 18px;
+    margin-left: -484px;
+    margin-top: 23px;
+
+
+
+
+
+}
+.lista-suspensa select {
+    background-color:white ;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
+    width:34%;
+    border: none;
+    font-size: 14px;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-left: -440px;
+
+}

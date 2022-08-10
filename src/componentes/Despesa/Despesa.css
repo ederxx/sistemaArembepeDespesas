@@ -1,0 +1,51 @@
+section{
+	margin: 10px 10px ;
+	overflow: hidden;
+
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+
+.table{
+	width: 40%;
+	margin-bottom : 1px;
+	margin-left : 100px;
+    table-layout: fixed;
+
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 0px 300px;
+    box-shadow: 8px 8px 16px rbga(0,0,0, 0.08);
+    
+}
+
+td {
+	padding: 10px;
+	margin: 100%;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
+    font-size: 14px;
+	border: 1px solid rgba(112, 182, 0, 0.705);
+	text-align: center;
+    background-color:white ;
+    
+    
+}
+
+th{
+	font-weight: bold;
+	background-color: rgb(252, 252, 252);
+    padding: 1px;
+	margin: 10%;
+	border: 1px solid rgba(112, 182, 0, 0.705);
+	text-align: center;
+    
+}
+
+

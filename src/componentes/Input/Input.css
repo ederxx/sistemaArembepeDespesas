@@ -1,0 +1,25 @@
+.campo-texto .input {
+    margin:1px 0;
+    
+}
+
+.campo-texto label {
+    display: block;  
+    margin-bottom: 8px;
+    font-size: 18px;
+    margin-left: 05px;
+    max-width: fit-content;
+}
+
+.campo-texto input {
+    background-color:white ;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
+    width:40%;
+    border: none;
+    font-size: 14px;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-left: -0445px;
+    max-width:35%;
+ 
+}

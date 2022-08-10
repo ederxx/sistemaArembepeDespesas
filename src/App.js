@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./componentes/Header/index.js"
+import Form from "./componentes/Form/index.js"
+import { useState } from 'react';
+import Despesa from "./componentes/Despesa"
 
 function App() {
+
+  const bancos = [
+    {
+      nome: 'Banco do Brasil'
+    },
+    {
+      nome: 'Banco Bradesco'
+    }
+  ]
+
+  const [despesas, setDespesas] = useState([])
+  const aNovaDespesaAdicionada = (despesa) => {
+    debugger
+    console.log(despesa)
+    setDespesas([...despesas, despesa])
+  }
   return (
+
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header>Arembepe Sistema</Header>
+      <Form bancos={bancos.map(banco => banco.nome)} aDespesaCadastrada={despesa => aNovaDespesaAdicionada(despesa)} />
+      
+      {despesas.map(despesa => <Despesa
+        key={despesa.nome} 
+        nome={despesa.nome} 
+        banco={despesa.banco} 
+        vencimento={despesa.vencimento} 
+        pagamento={despesa.pagamento} 
+        valor={despesa.valorDespesa} 
+        despesas={despesas.filter(despesa => despesa.despesa ===despesa.nome)}
+
+
+        />)}   
+
     </div>
   );
 }
