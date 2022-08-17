@@ -1,5 +1,6 @@
 
 const DataPagamento = (props) => {
+    
 return (
     <div className='data-pagamento'>
         <label>{props.label}</label>

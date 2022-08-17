@@ -1,13 +1,7 @@
 .lista-suspensa  label{
-   
-    margin-bottom: 8px;
-    font-size: 18px;
-
-    display:grid;  
-    margin-bottom: 8px;
-    font-size: 18px;
-    margin-left: -484px;
-    margin-top: 23px;
+    display:inline;  
+    align-items: center;
+    text-align: center;
 
 
 
@@ -16,12 +10,14 @@
 }
 .lista-suspensa select {
     background-color:white ;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
-    width:34%;
+    box-shadow: 10px 05px 10px rgba(0,0,0,0.6);
+    width:100%;
     border: none;
-    font-size: 14px;
-    padding: 4px;
+    font-size: 12px;
+    padding: 3px ;
     box-sizing: border-box;
-    margin-left: -440px;
+    display:table; 
+    max-width:100%;
+    margin-bottom: 8px;
 
 }

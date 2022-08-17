@@ -1,14 +1,15 @@
 import { useState } from "react"
 import Input from "../Input"
-
 import ValorDespesa from "../ValorDespesa/ValorDespesa"
 import Botao from "../Botao"
 import './Formulario.css'
 import ListaSuspensa from "../ListaSuspensa"
 import DataPagamento from "../DataPagamento"
 import DataVencimento from "../DataVencimento"
+import { addDoc, collection } from "firebase/firestore"
+import { getFirestore} from 'firebase/firestore'
+import {initializeApp} from 'firebase/app'
 
- 
 
 
 
@@ -17,24 +18,39 @@ const Form = (props) => {
     const [banco, setBanco] = useState();
     const [pagamento, setPagamento] = useState();
     const [vencimento, setVencimento] = useState();
-    const [valorDespesa, setValorDespesa] = useState();
+    const [valordespesa, setValordespesa] = useState();
 
 
-    const aoSalvar = (evento) => {
-        evento.preventDefault()
-        props.aDespesaCadastrada({
+    const firebaseApp = initializeApp( {
+        apiKey: "AIzaSyBmxqLALo0TdfitXQs7hRzpgJwKOzXnQNs",
+        authDomain: "arembepe-despesas.firebaseapp.com",
+        projectId: "arembepe-despesas",
+       
+      });
+    const  db = getFirestore(firebaseApp)
+    const useCollectionRef= collection(db, "despesas");
+        
+       
+  async function aoSalvar (){
+
+        const despesa= addDoc(useCollectionRef,
+         {
             nome,
             banco,
             pagamento,
             vencimento,
-            valorDespesa
+            valordespesa
         })
         setNome('')
         setBanco('')
         setPagamento('')
         setVencimento('')
-        setValorDespesa('')
+        setValordespesa('')
+        console.log(despesa)
     }
+   
+
+   
 return(
     <section className="formulario">
     <form onSubmit={aoSalvar}>
@@ -69,10 +85,10 @@ aoAlterado={valor => setBanco(valor)} />
 <ValorDespesa 
 obrigatorio={true}
 label="Valor da Despesa"
-valor={valorDespesa}
-aoAlterado={valor => setValorDespesa(valor)} />
+valor={valordespesa}
+aoAlterado={valor => setValordespesa(valor)} />
 
-<Botao>
+<Botao >
                     Adicionar Despesa
                 </Botao>
 

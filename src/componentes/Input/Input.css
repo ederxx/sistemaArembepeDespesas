@@ -1,25 +1,27 @@
-.campo-texto .input {
-    margin:1px 0;
-    
+.campo-texto input {
+
+    display:table-row;  
+    align-items: center;
+    /* margin: primeiro numero (direita e esquerda) segundo(cima baix0) */
+
+}.campo-texto label{
+    display:inline;  
+    align-items: center;
+    text-align: center;
+
 }
 
-.campo-texto label {
-    display: block;  
-    margin-bottom: 8px;
-    font-size: 18px;
-    margin-left: 05px;
-    max-width: fit-content;
-}
 
 .campo-texto input {
     background-color:white ;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
-    width:40%;
+    box-shadow: 10px 05px 10px rgba(0,0,0,0.6);
+    width:100%;
     border: none;
-    font-size: 14px;
-    padding: 4px;
+    font-size: 12px;
+    padding: 3px ;
     box-sizing: border-box;
-    margin-left: -0445px;
-    max-width:35%;
+    display:table; 
+    max-width:100%;
+    margin-bottom: 8px;
  
 }
