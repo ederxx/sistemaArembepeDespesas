@@ -10,9 +10,10 @@ import Filtro from './componentes/Filtro';
 
 
 const firebaseApp = initializeApp( {
-  apiKey: "AIzaSyBmxqLALo0TdfitXQs7hRzpgJwKOzXnQNs",
-  authDomain: "arembepe-despesas.firebaseapp.com",
-  projectId: "arembepe-despesas",
+
+  apiKey: "AIzaSyB0SnZAfmkRnWZzc17ZAUCBAlHLNNf8mds",
+  authDomain: "arembepe-despesas-226df.firebaseapp.com",
+  projectId: "arembepe-despesas-226df",
  
 });
 

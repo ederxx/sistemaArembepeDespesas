@@ -22,13 +22,13 @@ const Form = (props) => {
 
 
     const firebaseApp = initializeApp( {
-        apiKey: "AIzaSyBmxqLALo0TdfitXQs7hRzpgJwKOzXnQNs",
-        authDomain: "arembepe-despesas.firebaseapp.com",
-        projectId: "arembepe-despesas",
+        apiKey: "AIzaSyB0SnZAfmkRnWZzc17ZAUCBAlHLNNf8mds",
+        authDomain: "arembepe-despesas-226df.firebaseapp.com",
+        projectId: "arembepe-despesas-226df",
        
       });
     const  db = getFirestore(firebaseApp)
-    const useCollectionRef= collection(db, "despesas");
+    const useCollectionRef = collection(db, "despesas");
         
        
   async function aoSalvar (){
